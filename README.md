@@ -19,3 +19,14 @@
 ## Git管理方針
 - `.m4a` や `.obsidian/` は `.gitignore` により除外
 - 管理対象はテンプレート・構造・スクリプトのみ
+
+## 思考ログの昇格ルール
+
+録音ログや思考メモのうち、以下の条件を満たすものは `chiteki-vault` に昇格させる：
+
+- タグに `#問い`, `#抽象`, `#概念` が含まれる
+- テンプレートに `vault-origin: audio-memo-vault` が記載されている
+- `status: draft` → `status: promote` に変更されたもの
+- Dataviewで抽出された「昇格候補」一覧に含まれる
+
+昇格後は `chiteki-vault/01_Concepts/` または `03_Reflections/` に移動し、再構成される
