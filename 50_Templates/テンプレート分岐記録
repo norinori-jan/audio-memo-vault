@@ -1,0 +1,36 @@
+---
+title: "テンプレート分岐記録: {{title}}"
+created: {{date}}
+tags: [template分岐, 設計履歴, meta記録]
+related: [[50.templates/テンプレート分岐記録]], [[50.templates/テンプレート設計メモ]], [[README/{{title}}]]
+---
+
+# 🧭 分岐概要
+- テンプレート名：{{title}}
+- 分岐元テンプレート：[[50.templates/{{source_template}}]]
+- 分岐日：{{date}}
+- 分岐理由：
+  - 運用対象の変化（例：Draft → Meeting）
+  - 構造化粒度の調整
+  - Dataview抽出条件の変更
+  - Vault構造との連携強化
+
+# 🧩 変更点
+- セクション追加：`#Whisper連携`, `#PowerShell連携`, `#構造変更履歴`
+- タグ変更：`#draft候補` → `#meeting`, `#workflow`
+- Dataview対応：抽出条件に `contains(tags, "{{title}}")` を追加
+- 関連テンプレート追加：[[50.templates/Workflow_Log_Template]], [[50.templates/Failure_Template]]
+
+# 🧠 設計思想の継承
+- Draft育成型ワークフローにおけるテンプレート分岐は、失敗も資産化する思想に基づく
+- READMEに設計思想を明文化し、分岐理由と変更点を記録することで再利用性・説明責任を担保
+- Tag_Templateと連携し、抽出性・構造化の一貫性を維持
+
+# 🔄 関連履歴
+- 設計メモ：[[50.templates/テンプレート設計メモ]]
+- 分岐元：[[50.templates/{{source_template}}]]
+- 分岐先：[[50.templates/{{title}}]]
+- 関連タグ：`#template分岐`, `#meta記録`, `#設計履歴`
+
+# 📌 備考
+このテンプレートはテンプレート分岐の履歴と思想を記録するためのメタテンプレートです。Vault運用の透明性・再利用性・設計思想の継承を支える基盤として活用されます。
